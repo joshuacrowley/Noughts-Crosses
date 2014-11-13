@@ -12,4 +12,5 @@ iron:router
 email
 mizzao:bootstrap-3
 random
+fastclick
 
