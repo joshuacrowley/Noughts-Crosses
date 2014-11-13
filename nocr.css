@@ -1,0 +1,57 @@
+
+
+body {
+	margin: auto;
+	background-color: #fff;
+	font-family: 'Kite One', sans-serif;
+}
+
+
+header {
+	top: 0;
+	text-align: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #F9F2FF;
+	margin-bottom: 5%;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin: 0;
+	vertical-align: middle;
+	padding-top: 2%;
+}
+
+
+
+section#controls > p {
+
+	float: left;
+
+}
+
+
+section {
+	background-color: #fff;
+}
+
+.box {
+	float: left;
+	border-style: solid;
+	border-color: #000;
+	width: 30%;
+	height: 90px;
+	margin: auto;
+}
+
+.empty {
+	background-color: #FFF;
+}
+
+.clicked {
+	background-image: url(nought-copy.png);
+	background-size: 100%;
+	background-color: #fff;
+}
+

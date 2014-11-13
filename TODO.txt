@@ -1,0 +1,17 @@
+TO DO
+
+Game
+
+	1.Player creates game
+		
+	2.Player join game (via url?)
+	Board is created
+	Players are added to board
+	
+	Game Loop begins
+		Move is assigned
+		Player uses move
+			Move evaulated for win
+	Game Loop ends ends
+
+	Player creates game

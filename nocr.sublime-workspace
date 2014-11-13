@@ -1,0 +1,759 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"im",
+				"IMG	Tag"
+			],
+			[
+				"star",
+				"startGame"
+			],
+			[
+				"c",
+				"count"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"finn",
+				"finnCount"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bloc",
+				"inline-block"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"rgb",
+				"rgb()"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"s",
+				"style	Tag"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"user",
+				"user_password"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"open",
+				"openEmails"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"MA",
+				"margin-top"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"head",
+				"header	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+			[
+				"snipp",
+				"Snippet: html"
+			],
+			[
+				"syntax htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"syntax ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"snippe",
+				"Snippet: html"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"JOS",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"syntax ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syntax ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"sni",
+				"Snippet: html"
+			],
+			[
+				"Set syntax JSO",
+				"Set Syntax: JSON"
+			],
+			[
+				"Prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Pret",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Install 	",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"Set Syntax: JSON"
+			],
+			[
+				"set",
+				"Set Syntax: JSON"
+			],
+			[
+				"SEt",
+				"Set Syntax: JSON"
+			],
+			[
+				"Se",
+				"Set Syntax: JSON"
+			],
+			[
+				"Set ",
+				"Set Syntax: JSON"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax HT",
+				"Set Syntax: HTML"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snippet",
+				"Snippet: html"
+			],
+			[
+				"set syntax htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"sn",
+				"Snippet: html"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"CSS",
+				"Set Syntax: CSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jac/dev/nocr/nocr.html",
+		"/Users/jac/dev/nocr/nocr.css",
+		"/Users/jac/dev/nocr/TODO.txt",
+		"/Users/jac/dev/nocr/server/server.js",
+		"/Users/jac/dev/nocr/nocr.js",
+		"/Users/jac/dev/nocr/user_account.js",
+		"/Users/jac/dev/nocr/server/logic.js",
+		"/Users/jac/Desktop/Sketch.coffee",
+		"/Users/jac/Downloads/emali-link.txt",
+		"/Users/jac/Dropbox (Personal)/To Luanne/Solus/01 - Seniors Card/index.html",
+		"/Users/jac/Desktop/index-02.html",
+		"/Users/jac/Desktop/iinet.txt",
+		"/Users/jac/Dropbox (Personal)/ABC/Active Memory/Design/Sea Shells/square-test.xml",
+		"/Users/jac/Downloads/aixml-master 2/lib/main.js",
+		"/Users/jac/Dropbox (Personal)/ABC/Active Memory/Design/Library/3books.xml",
+		"/Users/jac/Desktop/javascript-test/book.json",
+		"/Users/jac/Desktop/javascript-test/test.txt",
+		"/Users/jac/Desktop/javascript-test/book-maker02.html",
+		"/Users/jac/Desktop/javascript-test/index.html",
+		"/Users/jac/Desktop/index.html",
+		"/Users/jac/Dropbox (Personal)/ABC/Active Memory/Design/Roman Holiday/Cues/version 2/v2-allcity.xml",
+		"/Users/jac/Dropbox (Personal)/ABC/Active Memory/Design/Latin Square/numbers.xml",
+		"/Users/jac/Desktop/d-series-01.xml",
+		"/Users/jac/Desktop/golden.xml",
+		"/Users/jac/Dropbox (Personal)/ABC/Active Memory/Design/Latin Square/icons/r.png",
+		"/Users/jac/Desktop/variables-01.xml",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 5/examples/canvas/canvas-smiley-face.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 5/examples/svg/animated-svg.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 5/examples/canvas/basic-interaction-rectangle.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 5/examples/canvas/canvas-complex-arc-example.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 5/examples/canvas/canvas-basic-animation.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 5/examples/canvas/canvas-draw-triangle.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 5/examples/canvas/canvas-basic-interaction.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/javascript/example-02.js",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/index.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/javascript/example-05.js",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/example-01.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/prompt.js",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/josh.js",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/changegif.js",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 3/examples/addElement.js",
+		"/Users/jac/Downloads/Week 2 Susan Le/style2.css",
+		"/Users/jac/Downloads/Week 2 Susan Le/home.html",
+		"/Users/jac/Downloads/Week 2 Susan Le/style.css",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 2/files/responsive-text-example/index.html",
+		"/Users/jac/Downloads/Webmedia Week 2/style.css",
+		"/Users/jac/Downloads/Webmedia Week 2/index.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 2/Files/Video example/index.html",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 2/files/josh-website/style.css",
+		"/Users/jac/Dropbox (Personal)/UTS/Josh 2/files/josh-website/index.html",
+		"/Users/jac/Desktop/test-emails.txt",
+		"/Users/jac/Desktop/trail-making_instance-3.json",
+		"/Users/jac/Desktop/timestamp-event.txt",
+		"/Users/jac/Desktop/trail-making-game_data.json",
+		"/Users/jac/Desktop/layout-bug",
+		"/Users/jac/Desktop/emails-payment",
+		"/Users/jac/Dropbox (ABC Commercial)/Active Memory/Projects/trigger emails/clean14/new-05.html",
+		"/Volumes/JOSH/YLC/Active Memory solus.html",
+		"/Users/jac/dev/meteor-demo/wordplay/TODO",
+		"/Users/jac/dev/meteor-demo/wordplay/model.js",
+		"/Users/jac/Desktop/notes for nat",
+		"/Users/jac/Desktop/questions.txt",
+		"/Users/jac/Desktop/dan.txt",
+		"/Users/jac/Desktop/dan2.txt",
+		"/Users/jac/Desktop/ActiveMemory-clean14-03/index.html",
+		"/Users/jac/Downloads/phaser-master/resources/Project Templates/Full Screen Mobile/index.html",
+		"/Users/jac/Downloads/ActiveMemory-clean14-01/index.html",
+		"/Users/jac/dev/jumpman/index.html",
+		"/Users/jac/Desktop/email-segments/not-included",
+		"/Users/jac/Desktop/login_tests/index.html",
+		"/Users/jac/Desktop/email_match/index.html",
+		"/Users/jac/Desktop/login_tests/activememory.com 2/index.html",
+		"/Users/jac/Dropbox/Active Memory/Wireframes/password-reset-stop/users/sign_in.html",
+		"/Users/jac/Desktop/email_match/rough.js",
+		"/Users/jac/Desktop/email_match/data/email-report.csv",
+		"/Users/jac/Desktop/email_match/js/jquery1.10.2.js",
+		"/Users/jac/Desktop/email_match/js/miso.ds.0.4.1.js",
+		"/Users/jac/Desktop/email match/email-report.csv",
+		"/Users/jac/dev/microscope/collections/posts.js",
+		"/Users/jac/dev/microscope/client/views/posts/post_item.html",
+		"/Users/jac/dev/microscope/client/views/posts/post_item.js",
+		"/Users/jac/dev/microscope/client/views/posts/posts_list.html",
+		"/Users/jac/dev/microscope/client/views/posts/posts_list.js",
+		"/Users/jac/dev/microscope/client/views/posts/post_list.js",
+		"/Users/jac/dev/microscope/server/fixtures.js",
+		"/Users/jac/dev/microscope/server/publications.js",
+		"/Users/jac/dev/microscope/client/main.html",
+		"/Users/jac/dev/microscope/client/views/application/layout.html",
+		"/Users/jac/dev/microscope/lib/router.js",
+		"/Users/jac/dev/microscope/client/main.js",
+		"/Users/jac/dev/microscope/client/views/inculdes/loading.html",
+		"/Users/jac/dev/microscope/client/stylesheets/style.css",
+		"/Users/jac/dev/n-c/noughts.js",
+		"/Users/jac/Downloads/ActiveMemory-AMUseremails/index.html",
+		"/Users/jac/Desktop/lapsed-lisa-design.html",
+		"/Users/jac/Dropbox/Active Memory/BRAINFIT_8_Marketing/Marketing Assets/NOV 13/Solus email/active-memory.html",
+		"/Users/jac/Desktop/soulus_files/index.html",
+		"/Users/jac/dev/Meny/index.html",
+		"/Users/jac/Desktop/lapsed-true",
+		"/Users/jac/Desktop/test.iqy",
+		"/Users/jac/Desktop/01.xml",
+		"/Users/jac/Desktop/rules",
+		"/Users/jac/Dropbox/Story Cloud/XML/HCP_StoryCloud_13091614550211199974_22.xml",
+		"/Users/jac/Desktop/test.json",
+		"/Library/WebServer/Documents/test-miso/js/d3.chart.js",
+		"/Library/WebServer/Documents/test-miso/index.html",
+		"/Library/WebServer/Documents/miso/jquery.min.js",
+		"/Library/WebServer/Documents/miso/index.html",
+		"/Library/WebServer/Documents/miso/miso.ds.deps.js",
+		"/Users/jac/Desktop/development/index.html",
+		"/Library/WebServer/Documents/playschool/index.html",
+		"/Library/WebServer/Documents/index.html",
+		"/Users/jac/Downloads/ActiveMemory-EDMtemplate (1)/index.html",
+		"/Users/jac/dev/ojschwa/css/main.css",
+		"/Users/jac/dev/ojschwa/css/mobile.css",
+		"/Users/jac/dev/ojschwa/css/syntax.css",
+		"/Users/jac/dev/ojschwa/css/gridpak.css",
+		"/Users/jac/Desktop/eDM/index.html",
+		"/Users/jac/Desktop/untitled folder/index.html",
+		"/Users/jac/Desktop/ActiveMemory-EDM2 2/index.html",
+		"/Users/jac/dev/ojschwa/js/jquery.dragend-0.1.3.js",
+		"/Users/jac/dev/ojschwa/_layouts/default.html",
+		"/Users/jac/dev/ojschwa/index.html",
+		"/Users/jac/dev/ojschwa/js/jQueryv1.9.1.js",
+		"/Users/jac/Desktop/joshuacrowley-com/joshuacrowley.com/index.html",
+		"/Users/jac/Desktop/mailout_template.html",
+		"/Users/jac/Desktop/master.txt",
+		"/Users/jac/dev/storycloud-cms/app/views/shared/_menu.html.erb"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"test.txt",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"error with",
+			"task",
+			"1",
+			"img",
+			"ul",
+			"Latin Square",
+			",",
+			"-1",
+			"-1,-1",
+			"-1,-1,-1",
+			",-",
+			"0",
+			"0,0",
+			"0",
+			"0,0,0",
+			"controls",
+			"varName",
+			"varName=\"cueName\"",
+			"trait=\"fileref\"",
+			"</cueName>",
+			"<cueName>",
+			"trait=\"fileref\"",
+			"textcontent",
+			"</p>\n        ",
+			"\n</p>\n        ",
+			"\n          <p>",
+			"%20",
+			"&ns_flows;",
+			"varName",
+			"trait=\"fileref\"",
+			"fileref",
+			"textcontent",
+			"</p>",
+			"<p>",
+			"directions",
+			"8",
+			"adap",
+			"number,10",
+			"stimulus3",
+			"10.3.",
+			"padding",
+			"modes",
+			"blank",
+			"<repeater>",
+			"panel",
+			"article-content",
+			"article.content",
+			"multiline",
+			"background-color",
+			"25A15F",
+			"img",
+			"6",
+			"nmlkj",
+			"\nnmlkj",
+			"\nActive Memory Paid Survey",
+			"\nnmlkj",
+			"nmlkj",
+			"Kaguya",
+			"nmlkj",
+			"http://www.fivepointfive.net/",
+			"http://fivepointfive.net/",
+			"http://www.fivepointfive.net/",
+			"http://www.fivepointfive.net/\n#N/A",
+			"\n#N/A",
+			"#N/A",
+			" ",
+			" ",
+			",",
+			", ",
+			"\"",
+			"* ",
+			"*",
+			"jquery.js?ver=1.7.2",
+			"degree/degree.html",
+			"degree.html",
+			"feed.1",
+			"degree.1",
+			"contact.1",
+			"style.css?ver=3.5.1",
+			"images",
+			"== 1",
+			"=== 1",
+			"=== 1 ||",
+			"&&",
+			" ",
+			" &&",
+			"&&",
+			"                ",
+			"=== 3 || ",
+			" ===",
+			"button4",
+			"this",
+			"this.mark",
+			"var",
+			"Crowley",
+			": ",
+			"[",
+			"400",
+			"1000",
+			"login-password",
+			"Username",
+			"\n\n",
+			"\n",
+			"Australia",
+			"downloads",
+			"gp-downloads",
+			"downloads",
+			"fieldset",
+			"head",
+			"onload",
+			".js",
+			"jquery",
+			"css",
+			"script",
+			"margin-left:20px;margin-right:20px;",
+			"Panel",
+			"'Fjalla One'",
+			"h3",
+			"h2",
+			"greyRoundedPanel",
+			"#N/A",
+			"beta_term",
+			"monthly_recurring",
+			"two_year",
+			"one_year",
+			"c",
+			"can",
+			"cancel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Sea Shells",
+			"	",
+			"</p></cueName>",
+			"<cueName><p>",
+			"",
+			" ",
+			"",
+			"../../",
+			"",
+			"\n",
+			"",
+			"jquery.js",
+			"degree/index.html",
+			"degree/degree.html",
+			"feed.html",
+			"degree.html",
+			"contact.html",
+			"style.css",
+			" ",
+			"",
+			"width:560px;",
+			"panel",
+			"'Open Sans'",
+			"h1",
+			"Panel",
+			"",
+			"http://bit.ly/seniors-01",
+			"https://activememory.com/?WT.tsrc=Email&WT.mc_id=Commercial_Commercial-Seniors-Card|Seniors-Card_email|solus-edm",
+			"width=\"580\"",
+			"\nwidth=\"580\"\n",
+			"\n",
+			"",
+			"<td style=\"font-family: 'Open Sans', Arial, sans-serif;\"",
+			"",
+			"#000000",
+			"#FFFFFF",
+			"",
+			"../projects",
+			"",
+			"30012",
+			"",
+			"	",
+			"",
+			"	",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.unsaved_changes":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}

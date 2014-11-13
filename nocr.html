@@ -1,0 +1,50 @@
+<head>
+  <title>Noughts and Crosses</title>
+  <link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+</body>
+
+ <template name="home">
+
+  <div class="container">
+    <header class="row">
+
+      
+      <img class="col-xs-4" src='/logo.png' />
+      
+      <h1 class="col-xs-8">Noughts&Crosses</h1>
+
+    </header>
+
+    <section class="row" id="controls">
+
+      {{> user_account}}
+
+      {{#if currentUser}}
+
+      {{/if}}
+
+    </section>
+
+    <section class="row" id="game">
+
+      <p><a href="#" id="join">Join a game</a> | <a href="#" id="start">Start a game</a> | <a href="#" id="reset">Reset</a></p>
+
+
+      {{#if currentUser}}
+        {{#each boxes}}
+          {{> box}}
+        {{/each}}
+      {{/if}}
+
+    </section>
+  </div>
+</template>
+
+<template name="box" class="row">
+  <div class="box {{boxValue}} col-xs-12"></div>
+</template>
