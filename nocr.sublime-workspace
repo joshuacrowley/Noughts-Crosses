@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"user",
+				"userId"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"game",
+				"gameToken"
+			],
+			[
+				"users",
+				"usersGame"
+			],
+			[
 				"st",
 				"state"
 			],
@@ -104,10 +120,6 @@
 				"console"
 			],
 			[
-				"user",
-				"user_password"
-			],
-			[
 				"li",
 				"link	Tag"
 			],
@@ -180,10 +192,52 @@
 	"buffers":
 	[
 		{
-			"file": "nocr.js",
+			"file": "lib/router.js",
 			"settings":
 			{
-				"buffer_size": 1783,
+				"buffer_size": 557,
+				"line_ending": "Unix",
+				"name": "Router.configure({"
+			}
+		},
+		{
+			"file": "client/templates/application/not_found.html",
+			"settings":
+			{
+				"buffer_size": 159,
+				"line_ending": "Unix",
+				"name": "<template name=\"notFound\">"
+			}
+		},
+		{
+			"file": "client/main.js",
+			"settings":
+			{
+				"buffer_size": 1133,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/application/layout.html",
+			"settings":
+			{
+				"buffer_size": 722,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/server.js",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/methods.js",
+			"settings":
+			{
+				"buffer_size": 215,
 				"line_ending": "Unix"
 			}
 		}
@@ -364,11 +418,17 @@
 	},
 	"file_history":
 	[
+		"/Users/jac/dev/nocr/client/templates/application/box.html",
+		"/Users/jac/dev/nocr/client/methods.js",
+		"/Users/jac/dev/nocr/server/methods.js",
+		"/Users/jac/dev/nocr/nocr.js",
+		"/Users/jac/dev/nocr/client/main.html",
 		"/Users/jac/dev/nocr/nocr.html",
+		"/Users/jac/dev/nocr/client/templates/application/layout.html",
+		"/Users/jac/dev/nocr/layout.html",
 		"/Users/jac/dev/nocr/nocr.css",
 		"/Users/jac/dev/nocr/TODO.txt",
 		"/Users/jac/dev/nocr/server/server.js",
-		"/Users/jac/dev/nocr/nocr.js",
 		"/Users/jac/dev/nocr/user_account.js",
 		"/Users/jac/dev/nocr/server/logic.js",
 		"/Users/jac/Desktop/Sketch.coffee",
@@ -485,13 +545,7 @@
 		"/Users/jac/Desktop/untitled folder/index.html",
 		"/Users/jac/Desktop/ActiveMemory-EDM2 2/index.html",
 		"/Users/jac/dev/ojschwa/js/jquery.dragend-0.1.3.js",
-		"/Users/jac/dev/ojschwa/_layouts/default.html",
-		"/Users/jac/dev/ojschwa/index.html",
-		"/Users/jac/dev/ojschwa/js/jQueryv1.9.1.js",
-		"/Users/jac/Desktop/joshuacrowley-com/joshuacrowley.com/index.html",
-		"/Users/jac/Desktop/mailout_template.html",
-		"/Users/jac/Desktop/master.txt",
-		"/Users/jac/dev/storycloud-cms/app/views/shared/_menu.html.erb"
+		"/Users/jac/dev/ojschwa/_layouts/default.html"
 	],
 	"find":
 	{
@@ -701,22 +755,77 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "nocr.js",
+					"file": "lib/router.js",
 					"settings":
 					{
-						"buffer_size": 1783,
+						"buffer_size": 557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								813,
-								813
+								516,
+								520
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Router.configure({",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/templates/application/not_found.html",
+					"settings":
+					{
+						"buffer_size": 159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<template name=\"notFound\">",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/main.js",
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								656,
+								656
 							]
 						],
 						"settings":
@@ -724,6 +833,86 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 94.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/templates/application/layout.html",
+					"settings":
+					{
+						"buffer_size": 722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								562,
+								562
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server/server.js",
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "server/methods.js",
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

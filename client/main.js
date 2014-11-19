@@ -4,6 +4,7 @@ Games = new Mongo.Collection("games");
 function startGame () {
 
   var token = Random.id([8]);
+
   console.log(token);
   Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.currentGame": token}});
 
@@ -20,16 +21,26 @@ function startGame () {
         createdAt: new Date()
       });
     };
+
+    Router.go('/games/'+token);
 };
 
-Template.layout.helpers({
+Template.menu.helpers({
   boxes: function () {
-    var usersGame = Meteor.user().profile.currentGame;
-    return Boxes.find({gameToken: usersGame}, {sort: {createdAt: -1}});
-  }
-});
+    if (this.params._id !== null) {
+      var usersGame = this.params._id;
+      return Boxes.find({gameToken: usersGame});
+      console.log("hello");
+    } else {
+      console.log("login please")
+    }
+  },
+  //learn: function () {
+   
+  //}
+})
 
-Template.layout.events({
+Template.menu.events({
   "click .box": function (event, template) {
     console.log("clicked");
     Boxes.update(this._id, {$set: {boxValue: "clicked"}});
