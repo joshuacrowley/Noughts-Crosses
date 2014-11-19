@@ -5,7 +5,6 @@
       <h1 class="col-xs-8">Noughts&Crosses</h1>
     </header>
     <section class="row" id="controls">
-      {{> learn}}
       {{> user_account}}
       {{#if currentUser}}
       {{/if}}
@@ -29,11 +28,6 @@
   <div class="box {{boxValue}} col-xs-12"></div>
 </template>
 
-<template name="learn" class="row">
-  <h4>ID of the game</h4>
-    <p>How can I display this? {{pageValue}}</p>
-</template>
-
 <template name="layout">
 <div class="container">
   <div id="main" class="row-fluid">
@@ -41,6 +35,5 @@
  </div>
 </div>
 </template>
-
 
 

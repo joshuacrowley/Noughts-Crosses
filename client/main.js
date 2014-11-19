@@ -25,21 +25,6 @@ function startGame () {
     Router.go('/games/'+token);
 };
 
-Template.menu.helpers({
-  boxes: function () {
-    if (this.params._id !== null) {
-      var usersGame = this.params._id;
-      return Boxes.find({gameToken: usersGame});
-      console.log("hello");
-    } else {
-      console.log("login please")
-    }
-  },
-  //learn: function () {
-   
-  //}
-})
-
 Template.menu.events({
   "click .box": function (event, template) {
     console.log("clicked");
