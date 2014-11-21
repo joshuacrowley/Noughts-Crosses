@@ -101,9 +101,11 @@ Template.enter_security_code.rendered = function() {
     watch_for_login_hashcode();
 };
 
-Template.loggedin.email = function() {
-    return Meteor.user().emails[0].address;
-};
+Template.loggedin.helpers({
+    email: function() {
+        return Meteor.user().emails[0].address;
+    }
+});
 
 Template.loggedin.events({
     'click #logout-btn': function (e, tmpl) {

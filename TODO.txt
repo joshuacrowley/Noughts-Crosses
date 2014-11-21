@@ -1,17 +1,6 @@
 TO DO
 
-Game
-
-	1.Player creates game
-		
-	2.Player join game (via url?)
-	Board is created
-	Players are added to board
-	
-	Game Loop begins
-		Move is assigned
-		Player uses move
-			Move evaulated for win
-	Game Loop ends ends
-
-	Player creates game
+Get Router.go to send user to the page (and stay there!)
+Assign Player permissions based on who started the game.
+Add turn logic
+Add game win conditions

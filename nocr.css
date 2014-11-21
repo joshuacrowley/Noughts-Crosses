@@ -43,15 +43,21 @@ section {
 	width: 30%;
 	height: 90px;
 	margin: auto;
+	background-size: 100%;
+	background-color: #fff;
+	background-repeat: no-repeat;
 }
 
 .empty {
 	background-color: #FFF;
 }
 
-.clicked {
-	background-image: url(nought-copy.png);
-	background-size: 100%;
-	background-color: #fff;
+.nought {
+	background-image: url(nought.png);
 }
+
+.cross {
+	background-image: url(cross.png);
+}
+
 

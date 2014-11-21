@@ -1,5 +1,4 @@
 <template name="menu">
-  <div class="container">
     <header class="row">
       <img class="col-xs-4" src='/logo.png' />
       <h1 class="col-xs-8">Noughts&Crosses</h1>
@@ -11,7 +10,7 @@
     </section>
     <section class="row" id="game">
       <p>
-        <a href="#" id="join">Join a game</a> | <a href="#" id="start">Start a game</a> | <a href="#" id="reset">Reset</a>
+        <a id="join">Join a game</a> | <a id="start">Start a game</a> | <a id="reset">Quit Game</a> | <a id="invite">Invite to Game</a>
       </p>
 
       {{#if currentUser}}
@@ -21,11 +20,10 @@
       {{/if}}
 
     </section>
-  </div>
 </template>
 
 <template name="box" class="row">
-  <div class="box {{boxValue}} col-xs-12"></div>
+  <div class="box {{boxValue}} col-xs-3 col-3"></div>
 </template>
 
 <template name="layout">
