@@ -14,6 +14,7 @@ header {
 	padding-bottom: 5%;
 	background-color: #F9F2FF;
 	margin-bottom: 5%;
+	max-height: 25px;
 }
 
 h1 {
@@ -26,9 +27,7 @@ h1 {
 
 
 section#controls > p {
-
 	float: left;
-
 }
 
 
@@ -36,16 +35,26 @@ section {
 	background-color: #fff;
 }
 
+#game {
+	max-width: 470px;
+}
+
+
 .box {
+	position: relative;
+	width: 30%;
 	float: left;
 	border-style: solid;
 	border-color: #000;
-	width: 30%;
-	height: 90px;
-	margin: auto;
 	background-size: 100%;
 	background-color: #fff;
 	background-repeat: no-repeat;
+}
+
+.box:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
 }
 
 .empty {

@@ -1,6 +1,13 @@
 TO DO
 
-Get Router.go to send user to the page (and stay there!)
-Assign Player permissions based on who started the game.
+Clean up CSS
+Remove personal email account
+Assign Player permissions based on who started the game
 Add turn logic
-Add game win conditions
+Add contextual users instructions
+Add win data
+Make divs retain ratio
+Add lobby
+Add email invite
+
+Deploy to Amazon Server

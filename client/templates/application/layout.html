@@ -8,12 +8,16 @@
       {{#if currentUser}}
       {{/if}}
     </section>
-    <section class="row" id="game">
+    <section class="controls row">
       <p>
-        <a id="join">Join a game</a> | <a id="start">Start a game</a> | <a id="reset">Quit Game</a> | <a id="invite">Invite to Game</a>
+        <a id="join">Join</a> | <a id="start">Start</a> | <a id="reset">Quit</a> | <a id="invite">Invite</a>
       </p>
+    </section>
+
+    <section class="row" id="game">
 
       {{#if currentUser}}
+
         {{#each boxes}}
           {{> box}}
         {{/each}}
@@ -22,8 +26,8 @@
     </section>
 </template>
 
-<template name="box" class="row">
-  <div class="box {{boxValue}} col-xs-3 col-3"></div>
+<template name="box">
+  <div class="box {{boxValue}}"></div>
 </template>
 
 <template name="layout">
