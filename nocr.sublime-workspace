@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"fo",
+				"footer	Tag"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"m",
+				"min-height"
+			],
+			[
+				"box",
+				"boxValue"
+			],
+			[
 				"user",
 				"userId"
 			],
@@ -22,10 +46,6 @@
 			[
 				"st",
 				"state"
-			],
-			[
-				"ma",
-				"margin-top"
 			],
 			[
 				"ba",
@@ -92,16 +112,8 @@
 				"rgb()"
 			],
 			[
-				"m",
-				"margin"
-			],
-			[
 				"min",
 				"min-height"
-			],
-			[
-				"max",
-				"max-width"
 			],
 			[
 				"mar",
@@ -172,10 +184,6 @@
 				"font-style"
 			],
 			[
-				"fo",
-				"font-size"
-			],
-			[
 				"background",
 				"background-color"
 			],
@@ -195,16 +203,24 @@
 			"file": "lib/router.js",
 			"settings":
 			{
-				"buffer_size": 345,
+				"buffer_size": 506,
 				"line_ending": "Unix",
 				"name": "Router.configure({"
+			}
+		},
+		{
+			"file": "client/lib/game.js",
+			"settings":
+			{
+				"buffer_size": 1925,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "client/main.js",
 			"settings":
 			{
-				"buffer_size": 1057,
+				"buffer_size": 1179,
 				"line_ending": "Unix"
 			}
 		},
@@ -212,15 +228,23 @@
 			"file": "client/templates/application/layout.html",
 			"settings":
 			{
-				"buffer_size": 814,
+				"buffer_size": 1541,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "TODO.txt",
+			"file": "nocr.css",
 			"settings":
 			{
-				"buffer_size": 159,
+				"buffer_size": 1023,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/user_account.html",
+			"settings":
+			{
+				"buffer_size": 2283,
 				"line_ending": "Unix"
 			}
 		}
@@ -228,9 +252,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 267.0,
+		"height": 247.0,
 		"selected_items":
 		[
+			[
+				"JS",
+				"Set Syntax: JSON"
+			],
 			[
 				"snipp",
 				"Snippet: html"
@@ -384,7 +412,7 @@
 				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -401,9 +429,15 @@
 	},
 	"file_history":
 	[
+		"/Users/jac/dev/nocr/client/lib/game.js",
+		"/Users/jac/dev/nocr/lib/collections.js",
+		"/Users/jac/dev/nocr/server/server.js",
+		"/Users/jac/dev/nocr/TODO.txt",
+		"/Users/jac/dev/nocr/settings.json",
+		"/Users/jac/dev/nocr/lib/game.js",
+		"/Users/jac/dev/nocr/client/game.js",
 		"/Users/jac/dev/nocr/client/user_account.js",
 		"/Users/jac/dev/nocr/server/methods.js",
-		"/Users/jac/dev/nocr/server/server.js",
 		"/Users/jac/dev/nocr/client/templates/application/not_found.html",
 		"/Users/jac/dev/nocr/client/templates/application/box.html",
 		"/Users/jac/dev/nocr/client/methods.js",
@@ -413,7 +447,6 @@
 		"/Users/jac/dev/nocr/client/templates/application/layout.html",
 		"/Users/jac/dev/nocr/layout.html",
 		"/Users/jac/dev/nocr/nocr.css",
-		"/Users/jac/dev/nocr/TODO.txt",
 		"/Users/jac/dev/nocr/user_account.js",
 		"/Users/jac/dev/nocr/server/logic.js",
 		"/Users/jac/Desktop/Sketch.coffee",
@@ -523,12 +556,7 @@
 		"/Library/WebServer/Documents/index.html",
 		"/Users/jac/Downloads/ActiveMemory-EDMtemplate (1)/index.html",
 		"/Users/jac/dev/ojschwa/css/main.css",
-		"/Users/jac/dev/ojschwa/css/mobile.css",
-		"/Users/jac/dev/ojschwa/css/syntax.css",
-		"/Users/jac/dev/ojschwa/css/gridpak.css",
-		"/Users/jac/Desktop/eDM/index.html",
-		"/Users/jac/Desktop/untitled folder/index.html",
-		"/Users/jac/Desktop/ActiveMemory-EDM2 2/index.html"
+		"/Users/jac/dev/ojschwa/css/mobile.css"
 	],
 	"find":
 	{
@@ -548,6 +576,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"noughtswinsforever",
+			"userId",
+			"==",
+			"x",
+			"1",
+			"mark",
+			"button6",
+			"button6.mark",
 			"Template.loggedin.email =",
 			"error with",
 			"task",
@@ -667,15 +703,7 @@
 			"Panel",
 			"'Fjalla One'",
 			"h3",
-			"h2",
-			"greyRoundedPanel",
-			"#N/A",
-			"beta_term",
-			"monthly_recurring",
-			"two_year",
-			"one_year",
-			"c",
-			"can"
+			"h2"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -738,7 +766,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -746,21 +774,22 @@
 					"file": "lib/router.js",
 					"settings":
 					{
-						"buffer_size": 345,
+						"buffer_size": 506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								345,
-								345
+								506,
+								506
 							]
 						],
 						"settings":
 						{
 							"auto_name": "Router.configure({",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -770,18 +799,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "client/main.js",
+					"file": "client/lib/game.js",
 					"settings":
 					{
-						"buffer_size": 1057,
+						"buffer_size": 1925,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								856,
-								856
+								1384,
+								1384
 							]
 						],
 						"settings":
@@ -791,25 +820,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 266.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "client/templates/application/layout.html",
+					"file": "client/main.js",
 					"settings":
 					{
-						"buffer_size": 814,
+						"buffer_size": 1179,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								23
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 146.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/templates/application/layout.html",
+					"settings":
+					{
+						"buffer_size": 1541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1302,
+								1302
 							]
 						],
 						"settings":
@@ -819,31 +876,59 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 50.0,
+						"translation.y": 538.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "TODO.txt",
+					"buffer": 4,
+					"file": "nocr.css",
 					"settings":
 					{
-						"buffer_size": 159,
+						"buffer_size": 1023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								912,
+								912
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 997.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/user_account.html",
+					"settings":
+					{
+						"buffer_size": 2283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

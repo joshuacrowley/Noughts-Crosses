@@ -1,44 +1,45 @@
-
-
 body {
 	margin: auto;
 	background-color: #fff;
 	font-family: 'Kite One', sans-serif;
 }
 
-
 header {
-	top: 0;
 	text-align: left;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	background-color: #F9F2FF;
+}
+
+#sign-up-btn{
+	margin-top: 10%;
+}
+
+header#thick {
+	margin-top: 20%;
 	margin-bottom: 5%;
-	max-height: 25px;
+}
+
+header#thin {
+
+}
+
+
+footer#thick {
+	margin-top: 40%;
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	margin: 0;
 	vertical-align: middle;
 	padding-top: 2%;
 }
 
-
-
-section#controls > p {
-	float: left;
-}
-
-
-section {
-	background-color: #fff;
+h5 {
+	text-align: center;
 }
 
 #game {
 	max-width: 470px;
 }
-
 
 .box {
 	position: relative;
@@ -49,6 +50,15 @@ section {
 	background-size: 100%;
 	background-color: #fff;
 	background-repeat: no-repeat;
+	transition: background-color 0.5s;
+}
+
+.box:hover {
+	background-color: #FFCCCC;
+}
+
+p.text:hover{
+	color: #fff;
 }
 
 .box:before{
@@ -59,14 +69,22 @@ section {
 
 .empty {
 	background-color: #FFF;
+	opacity: .5;
 }
 
 .nought {
 	background-image: url(nought.png);
+	transition: opacity .25s ease-in-out;
+	opacity: 1;
 }
 
 .cross {
 	background-image: url(cross.png);
+	opacity: 1;
+}
+
+.fadein, {
+    
 }
 
 

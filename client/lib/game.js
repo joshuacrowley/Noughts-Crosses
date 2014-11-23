@@ -1,3 +1,8 @@
+turnCheck = function (){
+
+
+};
+
 checkBoxes = function (){
     var usersGame = Meteor.user().profile.currentGame;
     var toCheck = Boxes.find({"gameToken": usersGame}, { $sort : { boxOrder : -1}}).fetch();
@@ -19,7 +24,7 @@ checkBoxes = function (){
       (toCheck[0]["boxValue"] == value && toCheck[4]["boxValue"] == value && toCheck[8]["boxValue"] == value) ||
       (toCheck[2]["boxValue"] == value && toCheck[4]["boxValue"] == value && toCheck[6]["boxValue"] == value)
    ) {
-      console.log(value + 'won');
+      alert(value + ' won');
     }else{
       console.log('Next turn');
     };
@@ -46,5 +51,5 @@ startGame = function (){
         createdAt: new Date()
       });
     };
-    
+
 };

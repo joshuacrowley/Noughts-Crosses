@@ -71,7 +71,8 @@ Meteor.methods({
             }
             random_hash += chr;
         }
-        var login_link_url = (ssl ? 'https' : 'http') + "://" + "localhost:3000" + "/#" + random_hash;
+        //var login_link_url = (ssl ? 'https' : 'http') + "://" + "localhost:3000" + "/#" + random_hash;
+        var login_link_url = Meteor.absoluteUrl() + "#" + random_hash;
 
         // add new record to timeout in LOGIN_CODE_TIMEOUT_MINUTES
         var timeout = (new Date()).valueOf() + (5 * 60 * 1000);
@@ -80,7 +81,7 @@ Meteor.methods({
 
 
         Email.send({
-            from: "joshua.crowley@gmail.com",
+            from: "meteor.crossword@gmail.com",
             to: email,
             subject: "NoMorePasswordsJustEmail " + codeType + " security code",
             text: ( "Your NoMorePasswordsJustEmail " + codeType + " security code is:\r\n\r\n      " + random_code + "\r\n\r\n" +

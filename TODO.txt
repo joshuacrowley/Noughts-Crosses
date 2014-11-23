@@ -1,7 +1,7 @@
 TO DO
 
 Clean up CSS
-Remove personal email account
+
 Assign Player permissions based on who started the game
 Add turn logic
 Add contextual users instructions
