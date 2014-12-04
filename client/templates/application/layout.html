@@ -1,0 +1,68 @@
+<template name="start">
+    <header class="row">
+      <section class="col-xs-12 col-md-6" >
+        <img class="col-xs-3" src='/xo.svg' id="logo" />
+        {{#if currentUser}}
+          {{> loggedin}}
+        {{else}}
+        <h1 class="col-xs-9">Noughts &amp; Crosses</h1>
+        {{/if}}
+      </section>
+    </header>
+
+    {{#if currentUser}}
+
+      <section class="controls row">
+      <p class="col-xs-12">
+        <a id="join">Join</a> | <a id="start">Start</a> | <a id="reset">Quit</a> | <a id="invite">Invite</a>
+      </p>
+    </section>
+
+    {{else}}
+    <section class="row">
+      <p class="col-xs-12 statement">Please enter your email address</p>
+    </section>
+    {{/if}}
+
+    <section class="row" id="controls">
+      {{> user_account}}
+    </section>
+
+
+    {{#if currentUser}}
+      <section class="row">
+        <div id="game" class="col-xs-12">
+        
+        {{#each boxes}}
+          {{> box}}
+        {{/each}}
+      </div>
+{{> nextMove}}
+      </section>
+    {{/if}}
+
+    <footer id="thick" class="row">
+    
+      <h5 class="col-xs-12 col-md-6">X&O is a <a href="https://medium.com/@ninjudd/passwords-are-obsolete-9ed56d483eb">Passwordless</a> app.</h5>
+      <h5 class="col-xs-12 col-md-6">(Made by <a href="http://joshuacrowley.com">Josh!)</a></h5>
+    </footer>
+
+</template>
+
+<template name="nextMove">
+  <p class="next">{{nextMove}}</p>
+</template>
+
+<template name="box">
+    <div class="box {{boxValue}}"></div>
+</template>
+  
+<template name="layout">
+<div class="container">
+  <div id="main" class="row-fluid">
+   {{> yield}}
+ </div>
+</div>
+</template>
+
+

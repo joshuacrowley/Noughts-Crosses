@@ -8,8 +8,9 @@ autopublish
 insecure
 accounts-ui
 accounts-password
-iron:router
 email
 mizzao:bootstrap-3
 random
-
+fastclick
+iron:router
+particle4dev:sass

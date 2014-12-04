@@ -1,17 +1,13 @@
 TO DO
 
-Game
+Clean up CSS
 
-	1.Player creates game
-		
-	2.Player join game (via url?)
-	Board is created
-	Players are added to board
-	
-	Game Loop begins
-		Move is assigned
-		Player uses move
-			Move evaulated for win
-	Game Loop ends ends
+Assign Player permissions based on who started the game
+Add turn logic
+Add contextual users instructions
+Add win data
+Make divs retain ratio
+Add lobby
+Add email invite
 
-	Player creates game
+Deploy to Amazon Server
