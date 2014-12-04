@@ -10,7 +10,7 @@ Template.nextMove.events({
   },
 });
 
-Template.menu.events({
+Template.start.events({
 
 "click .box": function (event, template) {
 
@@ -26,7 +26,8 @@ Template.menu.events({
   checkBoxes(value);
 },
 
-"click #start": function (event, template) {    
+"click #start": function (event, template) {
+  console.log("What up");    
   Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.nextMove": "It's your turn"}});
   startGame();
   var usersGame = Meteor.user().profile.currentGame;

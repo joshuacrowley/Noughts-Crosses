@@ -1,7 +1,6 @@
 <!-- related to user account/registration/login -->
 <template name="user_account">
   {{#if currentUser}}
-    {{> loggedin}}
   {{else}}
     {{#if session "email"}}
       {{> enter_security_code}}
@@ -13,16 +12,17 @@
 
 <!-- if not logged in, show this menu -->
   <template name="enter_email">
-    <form id="enter-email-form" class="form-inline col-xs-offset-2 col-xs-8" role="form">
+    <form id="enter-email-form" class="form-inline col-xs-offset-1 col-xs-10 col-md-6" role="form">
       <!--<label>Email:</label>-->
       <div class="row">
-        <div class="input-group">
+        <div class="input-group col-md-4">
         <label class="sr-only" for="exampleInputEmail2">Email address</label>
         <div class="input-group-addon">@</div>
         <input type="email" class="form-control" id="enter-email" placeholder="Enter email address">
         </div>
+        <button id="sign-up-btn" type="submit" class="btn btn-primary col-sm-2">Send</button>
+
       </div>
-              <button id="sign-up-btn" type="submit" class="btn btn-primary col-xs-offset-9">Send</button>
 
     </form>
 
@@ -31,7 +31,7 @@
 <!-- if we have the email address, but not yet the security code -->
   <template name="enter_security_code">
 
-    <form id="enter-security-code-form" class="form-inline col-xs-offset-2 col-xs-8" role="form">
+    <form id="enter-security-code-form" class="form-inline col-xs-offset-1 col-xs-10" role="form">
           <div class="row">
             <div class="input-group">
             <label class="sr-only" for="exampleInputEmail2">Security Code</label>
@@ -58,9 +58,8 @@
 <!-- if logged in, show recent stuff -->
   <template name="loggedin">
     <div class="row">
-      <p id="sign-up-btn" class="col-xs-offset-2 col-xs-8">Email: <strong>{{email}}</strong> &nbsp; &nbsp;
+      <p id="sign-up-btn" class="col-xs-8"><strong>{{email}}</strong>
         <button id="logout-btn" type="button" class="btn btn-mini btn-danger ">Logout</button>
-        <button id="play" type="button" class="btn btn-success" href="menu">Play</button>
       </p>
     </div>
   </template>

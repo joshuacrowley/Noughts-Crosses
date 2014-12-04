@@ -1,50 +1,56 @@
 <template name="start">
-    <header class="row" id="thick">
-      <h1 class="col-xs-10 col-xs-offset-1 ">Noughts<br>&amp; Crosses</h1>
-      <img class="col-xs-10 col-xs-offset-1" src='/xo.svg' />
+    <header class="row">
+      <section class="col-xs-12 col-md-6" >
+        <img class="col-xs-3" src='/xo.svg' id="logo" />
+        {{#if currentUser}}
+          {{> loggedin}}
+        {{else}}
+        <h1 class="col-xs-9">Noughts &amp; Crosses</h1>
+        {{/if}}
+      </section>
     </header>
-
-    <section class="row" id="controls">
-      {{> user_account}}
-    </section>
-
-    <footer id="thick" class="row">
-      <h5 class="col-xs-offset-2 col-xs-8">X&O is a <a href="https://medium.com/@ninjudd/passwords-are-obsolete-9ed56d483eb">Passwordless</a> app.</h5>
-      <h5 class="col-xs-offset-2 col-xs-8">(Made by a <a href="http://joshuacrowley.com">Josh!)</a></h5>
-    </footer>
-
-</template>
-
-
-<template name="menu">
-    <header class="row" id="thin">
-      <img class="col-xs-4" src="/xo.svg" />
-      <h3 class="col-xs-6">Noughts &amp; Crosses</h3>      
-    </header>
-
-    <section class="row" id="controls">
-      {{> user_account}}
-    </section>
 
     {{#if currentUser}}
-    <section class="controls row">
+
+      <section class="controls row">
       <p class="col-xs-12">
         <a id="join">Join</a> | <a id="start">Start</a> | <a id="reset">Quit</a> | <a id="invite">Invite</a>
       </p>
     </section>
 
-    <section class="row" id="game">
-        {{> nextMove}}
+    {{else}}
+    <section class="row">
+      <p class="col-xs-12 statement">Please enter your email address</p>
+    </section>
+    {{/if}}
+
+    <section class="row" id="controls">
+      {{> user_account}}
+    </section>
+
+
+    {{#if currentUser}}
+      <section class="row">
+        <div id="game" class="col-xs-12">
+        
         {{#each boxes}}
           {{> box}}
         {{/each}}
-    </section>
+      </div>
+{{> nextMove}}
+      </section>
     {{/if}}
+
+    <footer id="thick" class="row">
+    
+      <h5 class="col-xs-12 col-md-6">X&O is a <a href="https://medium.com/@ninjudd/passwords-are-obsolete-9ed56d483eb">Passwordless</a> app.</h5>
+      <h5 class="col-xs-12 col-md-6">(Made by <a href="http://joshuacrowley.com">Josh!)</a></h5>
+    </footer>
 
 </template>
 
 <template name="nextMove">
-  <p class="text">{{nextMove}}</p>
+  <p class="next">{{nextMove}}</p>
 </template>
 
 <template name="box">

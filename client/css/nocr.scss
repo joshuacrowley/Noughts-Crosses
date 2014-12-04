@@ -1,0 +1,150 @@
+$baseline: 22px;
+$backgroundJump: #fff;
+$menuColour: rgba(205,190,241,0.5);
+
+h1 {
+	margin: 0;
+	padding: 0;	
+	font-size: 23px;
+	line-height: $baseline*2;
+	margin-top: $baseline/2;
+	margin-bottom: $baseline/2;
+}
+
+#logout-btn {
+	display: none;
+}
+
+#logo {
+	height: $baseline*3;
+	width: 72px;
+	padding: 0;
+	/*margin-top: $baseline/2;
+	margin-bottom: $baseline/2;*/
+}
+
+.statement {
+	text-align: center;
+	margin-top: $baseline*8;
+}
+
+.controls {
+	text-align: center;
+	margin-top: $baseline;
+}
+
+p {
+   font-size: 16px;
+   line-height: $baseline;
+   margin-bottom: $baseline;
+}
+
+body {
+	margin: auto;
+	margin-top: 0;
+	background-color: $backgroundJump;
+	font-family: 'Kite One', sans-serif;
+}
+
+header {
+	text-align: left;
+	background-color: $menuColour;
+}
+
+#sign-up-btn{
+	margin-top: $baseline;
+}
+
+footer {
+	position: absolute;
+	min-height: $baseline*3;
+	bottom: 0;
+	width: 100%;
+	background-color: $menuColour;
+}
+
+form {
+	margin-bottom: $baseline;
+}
+
+h5 {
+	text-align: center;
+}
+
+#game {
+	height: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px; 
+	max-width: 470px;
+	background-image: url(grid.svg);
+	background-repeat: no-repeat;
+	background-size: 100%, 100%;
+	margin-bottom: $baseline/2;
+}
+
+#game:after{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.box {
+	width: 33.333%;
+	float: left;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.box:hover {
+	background-color: #FFCCCC;
+}
+
+.next {
+	text-align: center;
+}
+
+p.text:hover{
+	color: #fff;
+}
+
+.box:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.empty {
+	opacity: .5;
+}
+
+.nought {
+	background-size: contain;
+	background-image: url(nought.png);
+	transition: opacity .25s ease-in-out;
+	opacity: 1;
+}
+
+.cross {
+	background-size: 100%, 100%;
+	background-image: url(cross.png);
+	opacity: 1;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}
+
