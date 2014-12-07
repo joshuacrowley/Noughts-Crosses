@@ -1,6 +1,5 @@
 turnCheck = function (){
 
-
 };
 
 checkBoxes = function (){
@@ -8,9 +7,6 @@ checkBoxes = function (){
     var toCheck = Boxes.find({"gameToken": usersGame}, { $sort : { boxOrder : -1}}).fetch();
     var toGame = Games.find({"gameToken": usersGame}).fetch();
     
-    //console.log(toCheck[1]);
-    //console.log(toGame);
-
     var value = (Meteor.userId() == toGame[0]["owner"] ) ? "nought" : "cross";
     console.log(value);
     
@@ -32,8 +28,18 @@ checkBoxes = function (){
 
 startGame = function (){
 
+  var gridWidth = 3;
+  var gridHeight = 3;
   var token = Random.id([8]);
-  //console.log(token);
+  console.log(token);
+
+  rangeCorrect = function (num){
+    if(num < 0 || num > gridHeight*gridHeight){
+      return 0;
+    }else{
+      return num;
+  }};
+
   Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.currentGame": token}});
 
     Games.insert({
@@ -43,13 +49,65 @@ startGame = function (){
       createdAt: new Date()
     });
 
-    for (var i = 1; i <= 9; i++) {
+    for (var i = 1; i <= gridWidth*gridHeight; i++) {
+
+        var north = -gridWidth + i;
+        var northEast = -gridWidth+1 + i;
+        var east = 1 + i;
+        var southEast = gridWidth + i + 1;
+        var south = gridWidth + i;
+        var southWest = gridWidth + i -1;
+        var west = -1 + i;
+        var northWest = -gridWidth-1 + i;
+
+        north = rangeCorrect(north);
+        northEast = rangeCorrect(northEast);
+        east = rangeCorrect(east);
+        southEast = rangeCorrect(southEast);
+        south = rangeCorrect(south);
+        southWest = rangeCorrect(southWest);
+        west = rangeCorrect(west);
+        northWest = rangeCorrect(northWest);   
+
+      //stops top row references
+      if (i <= gridWidth){
+        north = northWest = northEast = 0;
+      }else{
+        
+      };
+
+      //stops bottom row references
+      if (i > (gridWidth*gridHeight-gridHeight)){
+        south = southWest = southEast = 0;
+      }else{
+        
+      };
+
+      //stops right edge references
+      if ((i % gridWidth) == 0){
+        east = northEast = southEast = 0;
+      }else{
+      };
+
+      //stops left edge references
+      if ((i - 1) % gridWidth == 0){
+        west = northWest = southWest = 0;
+      }else{
+      };
+
       Boxes.insert({
         boxOrder : i,
         gameToken: token,
         boxValue: "empty",
-        createdAt: new Date()
+        createdAt: new Date(),
+        north: north,
+        northEast: northEast,
+        east: east,
+        southEast: southEast,
+        south: south,
+        southWest: southWest,
+        west: west,
+        northWest: northWest
       });
     };
-
 };
