@@ -2,13 +2,29 @@ turnCheck = function (){
 
 };
 
-checkBoxes = function (){
+checkBoxes = function (boxIDs){
+
+    var runCount = 0;
+
+    console.log(boxIDs + " " + "01");
+
+    var directionsToCheck = Boxes.find({"_id": boxIDs}, {directions : 1}).forEach( 
+      
+      function(myDoc) { console.log(myDoc.directions); 
+
+      });;
+
+    console.log(directionsToCheck);
+
     var usersGame = Meteor.user().profile.currentGame;
     var toCheck = Boxes.find({"gameToken": usersGame}, { $sort : { boxOrder : -1}}).fetch();
+
     var toGame = Games.find({"gameToken": usersGame}).fetch();
     
     var value = (Meteor.userId() == toGame[0]["owner"] ) ? "nought" : "cross";
     console.log(value);
+
+    /*
     
     if (    
       (toCheck[0]["boxValue"] == value && toCheck[1]["boxValue"] == value && toCheck[2]["boxValue"] == value) || 
@@ -24,6 +40,8 @@ checkBoxes = function (){
     }else{
       console.log('Next turn');
     };
+
+    */
 }
 
 startGame = function (){
@@ -96,18 +114,20 @@ startGame = function (){
       };
 
       Boxes.insert({
-        boxOrder : i,
-        gameToken: token,
-        boxValue: "empty",
-        createdAt: new Date(),
-        north: north,
-        northEast: northEast,
-        east: east,
-        southEast: southEast,
-        south: south,
-        southWest: southWest,
-        west: west,
-        northWest: northWest
+        "boxOrder" : i,
+        "gameToken": token,
+        "boxValue": "empty",
+        "createdAt": new Date(),
+        "directions": [
+            {"N": north},
+            {"NE": northEast},
+            {"E": east},
+            {"SE": southEast},
+            {"S": south},
+            {"SW": southWest},
+            {"W": west},
+            {"NW": northWest}
+        ]
       });
     };
 };

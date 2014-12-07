@@ -21,9 +21,8 @@ Template.start.events({
 
   $(event.target).addClass('fadein');
   //Games.update({gameToken: usersGame}, {$set: {"state": value}});
-
   Boxes.update(this._id, {$set: {boxValue: value}});
-  checkBoxes(value);
+  checkBoxes(this._id);
 },
 
 "click #start": function (event, template) {
