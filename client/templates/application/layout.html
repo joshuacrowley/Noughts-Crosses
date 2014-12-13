@@ -1,4 +1,4 @@
-<template name="start">
+<template name="game">
     <header class="row">
       <section class="col-xs-12 col-md-6" >
         <img class="col-xs-3" src='/xo.svg' id="logo" />
@@ -41,10 +41,15 @@
       </section>
     {{/if}}
 
-    <footer id="thick" class="row">
+    <footer id="thick" class="row hidden-xs">
+
+      <div class="row">
+        <h5 class="col-xs-12">X&O is a <a href="https://medium.com/@ninjudd/passwords-are-obsolete-9ed56d483eb">Passwordless</a> app.</h5>
+      </div>
+      <div class="row">
+        <h5 class="col-xs-12">(Made by <a href="http://joshuacrowley.com">Josh!)</a></h5>
+      </div>
     
-      <h5 class="col-xs-12 col-md-6">X&O is a <a href="https://medium.com/@ninjudd/passwords-are-obsolete-9ed56d483eb">Passwordless</a> app.</h5>
-      <h5 class="col-xs-12 col-md-6">(Made by <a href="http://joshuacrowley.com">Josh!)</a></h5>
     </footer>
 
 </template>

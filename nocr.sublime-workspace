@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"o",
+				"opponent"
+			],
+			[
+				"tur",
+				"turnState"
+			],
+			[
+				"tu",
+				"turnState"
+			],
+			[
+				"chec",
+				"checkPlayer"
+			],
+			[
+				"B",
+				"boxValue"
+			],
+			[
+				"ce",
+				"cellID"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
 				"id",
 				"_id"
 			],
@@ -120,10 +152,6 @@
 				"border-radius"
 			],
 			[
-				"for",
-				"for	for (…) {…} (Improved Native For-Loop)"
-			],
-			[
 				"colo",
 				"color"
 			],
@@ -174,10 +202,6 @@
 			[
 				"open",
 				"openEmails"
-			],
-			[
-				"co",
-				"console"
 			],
 			[
 				"pad",
@@ -239,7 +263,7 @@
 			"file": "lib/router.js",
 			"settings":
 			{
-				"buffer_size": 508,
+				"buffer_size": 505,
 				"line_ending": "Unix",
 				"name": "Router.configure({"
 			}
@@ -248,7 +272,7 @@
 			"file": "client/main.js",
 			"settings":
 			{
-				"buffer_size": 1208,
+				"buffer_size": 2231,
 				"line_ending": "Unix"
 			}
 		},
@@ -256,8 +280,17 @@
 			"file": "client/lib/game.js",
 			"settings":
 			{
-				"buffer_size": 3799,
+				"buffer_size": 5841,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "function to check neighbours for value\n\nvar to save direction in which value was located\n\nfunction to check next neighbour in that direction\n\n	if not, then stop\n\n	otherwise next neighbour\n\nfunction to check for win\n\n\nyourTurn = function(){\n	if(winCount > 2){\n		console.log(\"game is over\");\n		//end game\n	}\n};\n\ncheckWin = function(){\n	if(winCount > 2){\n		console.log(\"game is over\");\n		//end game\n	}\n};\n\ncheckBoxes = function (boxIDs, gameToken, value){\n\n	yourTurn();\n	validMove();\n	checkNeighbours();\n	checkWin();\n\n};",
+			"settings":
+			{
+				"buffer_size": 517,
+				"line_ending": "Unix",
+				"name": "function to check neighbours for value"
 			}
 		},
 		{
@@ -272,7 +305,7 @@
 			"file": "client/head.html",
 			"settings":
 			{
-				"buffer_size": 254,
+				"buffer_size": 266,
 				"line_ending": "Unix"
 			}
 		},
@@ -280,7 +313,7 @@
 			"file": "client/templates/application/layout.html",
 			"settings":
 			{
-				"buffer_size": 1589,
+				"buffer_size": 1659,
 				"line_ending": "Unix"
 			}
 		},
@@ -288,7 +321,15 @@
 			"file": "client/css/nocr.scss",
 			"settings":
 			{
-				"buffer_size": 2066,
+				"buffer_size": 2031,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/server.js",
+			"settings":
+			{
+				"buffer_size": 252,
 				"line_ending": "Unix"
 			}
 		}
@@ -481,6 +522,7 @@
 	},
 	"file_history":
 	[
+		"/Users/jac/dev/nocr/nocr.sublime-project",
 		"/Users/jac/dev/nocr/.meteor/local/build/programs/web.browser/app/client/lib/game.js",
 		"/Users/jac/dev/nocr/public/nocr.sass",
 		"/Users/jac/dev/nocr/client/lib/game.js",
@@ -607,8 +649,7 @@
 		"/Library/WebServer/Documents/miso/miso.ds.deps.js",
 		"/Users/jac/Desktop/development/index.html",
 		"/Library/WebServer/Documents/playschool/index.html",
-		"/Library/WebServer/Documents/index.html",
-		"/Users/jac/Downloads/ActiveMemory-EDMtemplate (1)/index.html"
+		"/Library/WebServer/Documents/index.html"
 	],
 	"find":
 	{
@@ -823,7 +864,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -831,15 +872,15 @@
 					"file": "lib/router.js",
 					"settings":
 					{
-						"buffer_size": 508,
+						"buffer_size": 505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								270,
-								270
+								267,
+								267
 							]
 						],
 						"settings":
@@ -859,15 +900,15 @@
 					"file": "client/main.js",
 					"settings":
 					{
-						"buffer_size": 1208,
+						"buffer_size": 2231,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								686,
-								686
+								340,
+								340
 							]
 						],
 						"settings":
@@ -877,7 +918,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 227.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -887,15 +928,15 @@
 					"file": "client/lib/game.js",
 					"settings":
 					{
-						"buffer_size": 3799,
+						"buffer_size": 5841,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								268,
-								268
+								1636,
+								1636
 							]
 						],
 						"settings":
@@ -905,13 +946,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1065.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"auto_name": "function to check neighbours for value",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "client/user_account.html",
 					"settings":
 					{
@@ -939,19 +1007,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "client/head.html",
 					"settings":
 					{
-						"buffer_size": 254,
+						"buffer_size": 266,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								246,
-								246
+								256,
+								256
 							]
 						],
 						"settings":
@@ -965,19 +1033,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "client/templates/application/layout.html",
 					"settings":
 					{
-						"buffer_size": 1589,
+						"buffer_size": 1659,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1278,
-								1278
+								16,
+								20
 							]
 						],
 						"settings":
@@ -993,25 +1061,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "client/css/nocr.scss",
 					"settings":
 					{
-						"buffer_size": 2066,
+						"buffer_size": 2031,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1370,
-								1370
+								796,
+								796
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 676.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "server/server.js",
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

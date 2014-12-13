@@ -2,27 +2,83 @@ turnCheck = function (){
 
 };
 
-checkBoxes = function (boxIDs){
+checkBoxes = function (boxIDs, gameToken, value){
 
     var runCount = 0;
+    var ToCheck = Boxes.findOne({"_id": boxIDs}).neighbourCells
 
-    console.log(boxIDs + " " + "01");
+    for (var key in ToCheck) {
 
-    var directionsToCheck = Boxes.find({"_id": boxIDs}, {directions : 1}).forEach( 
-      
-      function(myDoc) { console.log(myDoc.directions); 
+      var neighbours = ToCheck[key];
 
-      });;
+      //if a valid cell
+      if (neighbours.cellID != 0){
 
-    console.log(directionsToCheck);
+        //find the cell, by game and by the order
+        var cellToCheck = Boxes.findOne({
+          $and : [
+          {"gameToken": gameToken}, 
+          {"boxOrder" : neighbours.cellID}
+          ]
+        })
+
+        //save the direction if we're going to follow it
+        var tangent = neighbours.direction;
+        console.log(tangent);
+
+        //now, while this value is equal to the player
+        while (cellToCheck.boxValue == value){
+
+          toDoubleCheck = cellToCheck.neighbourCells;
+
+          for (var key in toDoubleCheck) {
+
+            var nextCheck = toDoubleCheck[key];
+
+            if (toDoubleCheck.direction == tangent){
+
+            }
+
+          }
+
+          if (runCount > 10){
+            break;
+          } 
+          //up the count
+          runCount++;
+          //get the sibiling value of the tangent
+          console.log(cellToCheck.neighbourCells.tangent);
+          var whileCheck = cellToCheck.neighbourCells.tangent;
+          var whileCheck = this.cellID;
+
+          //update the value of the object
+
+        }
+
+      }else{
+
+      };
+
+    };
+
+      //set Index number
+      //set Direction
+      //set Count
+
+      //find cell by the index number and save the boxValue
+      //compare the boxValue with player's value
+        //if true up count and get index number of that cell's direction
+
 
     var usersGame = Meteor.user().profile.currentGame;
     var toCheck = Boxes.find({"gameToken": usersGame}, { $sort : { boxOrder : -1}}).fetch();
-
     var toGame = Games.find({"gameToken": usersGame}).fetch();
-    
     var value = (Meteor.userId() == toGame[0]["owner"] ) ? "nought" : "cross";
-    console.log(value);
+
+    Games.update({_id: currentGame._id}, {$set: {"turnState": nextTurn}});
+    Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.nextMove": "Waiting for opponent to respond."}});
+    Meteor.call('tellPlayer', nextTurn);
+    //Meteor.users.update({_id: nextTurn}, {$set: {"profile.nextMove": "It's your turn."}});
 
     /*
     
@@ -62,8 +118,9 @@ startGame = function (){
 
     Games.insert({
       gameToken: token,
-      state: "ready",
+      turnState: Meteor.userId(),
       owner: Meteor.userId(),
+      opponent: "none",
       createdAt: new Date()
     });
 
@@ -117,16 +174,33 @@ startGame = function (){
         "boxOrder" : i,
         "gameToken": token,
         "boxValue": "empty",
+        "streak" : "no",
         "createdAt": new Date(),
-        "directions": [
-            {"N": north},
-            {"NE": northEast},
-            {"E": east},
-            {"SE": southEast},
-            {"S": south},
-            {"SW": southWest},
-            {"W": west},
-            {"NW": northWest}
+        "neighbourCells": [
+          { "direction": "north",
+            "cellID" : north
+          },
+          { "direction": "northEast",
+            "cellID" : northEast
+          },
+          { "direction": "east",
+            "cellID" : east
+          },
+          { "direction": "southEast",
+            "cellID" : southEast
+          },
+          { "direction": "south",
+            "cellID" : south
+          },
+          { "direction": "southWest",
+            "cellID" : southWest
+          },
+          { "direction": "west",
+            "cellID" : west
+          },
+          { "direction": "northWest",
+            "cellID" : northWest
+          }
         ]
       });
     };
