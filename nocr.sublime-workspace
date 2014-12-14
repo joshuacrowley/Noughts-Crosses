@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"to",
+				"toWin"
+			],
+			[
+				"ce",
+				"cellCheck"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"so",
+				"south"
+			],
+			[
+				"cell",
+				"cellID"
+			],
+			[
+				"the",
+				"theBoxID"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
 				"o",
 				"opponent"
 			],
@@ -22,10 +50,6 @@
 			[
 				"B",
 				"boxValue"
-			],
-			[
-				"ce",
-				"cellID"
 			],
 			[
 				"co",
@@ -116,10 +140,6 @@
 				"userId"
 			],
 			[
-				"re",
-				"render"
-			],
-			[
 				"game",
 				"gameToken"
 			],
@@ -138,10 +158,6 @@
 			[
 				"star",
 				"startGame"
-			],
-			[
-				"c",
-				"count"
 			],
 			[
 				"border-c",
@@ -263,16 +279,16 @@
 			"file": "lib/router.js",
 			"settings":
 			{
-				"buffer_size": 505,
+				"buffer_size": 556,
 				"line_ending": "Unix",
 				"name": "Router.configure({"
 			}
 		},
 		{
-			"file": "client/main.js",
+			"file": "server/methods.js",
 			"settings":
 			{
-				"buffer_size": 2231,
+				"buffer_size": 992,
 				"line_ending": "Unix"
 			}
 		},
@@ -280,17 +296,16 @@
 			"file": "client/lib/game.js",
 			"settings":
 			{
-				"buffer_size": 5841,
+				"buffer_size": 7133,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "function to check neighbours for value\n\nvar to save direction in which value was located\n\nfunction to check next neighbour in that direction\n\n	if not, then stop\n\n	otherwise next neighbour\n\nfunction to check for win\n\n\nyourTurn = function(){\n	if(winCount > 2){\n		console.log(\"game is over\");\n		//end game\n	}\n};\n\ncheckWin = function(){\n	if(winCount > 2){\n		console.log(\"game is over\");\n		//end game\n	}\n};\n\ncheckBoxes = function (boxIDs, gameToken, value){\n\n	yourTurn();\n	validMove();\n	checkNeighbours();\n	checkWin();\n\n};",
+			"file": "client/main.js",
 			"settings":
 			{
-				"buffer_size": 517,
-				"line_ending": "Unix",
-				"name": "function to check neighbours for value"
+				"buffer_size": 2196,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -329,7 +344,7 @@
 			"file": "server/server.js",
 			"settings":
 			{
-				"buffer_size": 252,
+				"buffer_size": 431,
 				"line_ending": "Unix"
 			}
 		}
@@ -673,6 +688,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"won!",
+			"call",
+			"boxToCheck",
+			"insert",
 			"rangeCorrect",
 			"grid[0]",
 			": ",
@@ -796,11 +815,7 @@
 			"Australia",
 			"downloads",
 			"gp-downloads",
-			"downloads",
-			"fieldset",
-			"head",
-			"onload",
-			".js"
+			"downloads"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -864,7 +879,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -872,15 +887,15 @@
 					"file": "lib/router.js",
 					"settings":
 					{
-						"buffer_size": 505,
+						"buffer_size": 556,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								267,
-								267
+								499,
+								458
 							]
 						],
 						"settings":
@@ -897,28 +912,26 @@
 				},
 				{
 					"buffer": 1,
-					"file": "client/main.js",
+					"file": "server/methods.js",
 					"settings":
 					{
-						"buffer_size": 2231,
+						"buffer_size": 992,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								340,
-								340
+								355,
+								355
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 227.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -928,15 +941,15 @@
 					"file": "client/lib/game.js",
 					"settings":
 					{
-						"buffer_size": 5841,
+						"buffer_size": 7133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1636,
-								1636
+								174,
+								174
 							]
 						],
 						"settings":
@@ -946,34 +959,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1065.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "client/main.js",
 					"settings":
 					{
-						"buffer_size": 517,
+						"buffer_size": 2196,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								401,
-								401
+								905,
+								905
 							]
 						],
 						"settings":
 						{
-							"auto_name": "function to check neighbours for value",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 147.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1082,7 +1096,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 676.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1092,15 +1106,15 @@
 					"file": "server/server.js",
 					"settings":
 					{
-						"buffer_size": 252,
+						"buffer_size": 431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								204,
-								204
+								431,
+								431
 							]
 						],
 						"settings":

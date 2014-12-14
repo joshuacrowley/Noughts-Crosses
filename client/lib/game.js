@@ -4,7 +4,7 @@ var runCount;
 toWin = function (x){
   if (x >= 2){
       console.log("won!");
-      Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.nextMove": "You Won!"}});
+      Games.update({_id: currentGame._id}, {$set: {"turnState": "game over"}});
     };
 }
 
@@ -119,7 +119,7 @@ checkBoxes = function (boxIDs, gameToken, value){
           toWin(testStreak);
         }
 
-      };
+      }; 
 
       //set Index number
       //set Direction

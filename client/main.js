@@ -12,35 +12,34 @@ Template.game.events({
   currentGame = Games.findOne({"gameToken": usersGame});
   nextTurn = (Meteor.userId() == currentGame.owner ) ? currentGame.opponent  : currentGame.owner; 
   value = (Meteor.userId() == currentGame.owner ) ? "nought" : "cross";
-  
-  
-  console.log(nextTurn);
 
   var checkEmpty = function(){
-  if (this.boxValue == "empty") {
-    $(event.target).addClass('fadein');
-    Boxes.update(this._id, {$set: {boxValue: value}});
-    checkBoxes(this._id, usersGame, value);
-    Games.update({_id: currentGame._id}, {$set: {"turnState": nextTurn}});
-  }else{
-    Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.nextMove": "That spot is taken."}});
-  }};
+
+if (this.boxValue == "empty") {
+        $(event.target).addClass('fadein');
+        Boxes.update(this._id, {$set: {boxValue: value}});
+        checkBoxes(this._id, usersGame, value);
+        if (currentGame.turnState == "game over"){
+                Meteor.users.update({_id: player}, {$set: {"profile.nextMove": "You Won!"}});
+      Meteor.users.update({_id: nextTurn}, {$set: {"profile.nextMove": "You Lost!"}});
+          return};
+        Games.update({_id: currentGame._id}, {$set: {"turnState": nextTurn}});
+      }else{
+        Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.nextMove": "That spot is taken."}});
+    }
+  };
 
   if (Meteor.userId() != currentGame.owner && currentGame.opponent == "none" ){
-    console.log(currentGame._id);
     Games.update({_id: currentGame._id}, {$set: {"opponent": Meteor.userId()}});
     checkEmpty.call(this);
     return;
   }else{
-    console.log("nothing added");
   };
 
   if (Meteor.userId()  == currentGame.turnState){
-    console.log("valid player")
     checkEmpty.call(this);
-    console.log(currentGame._id);
+
   }else{
-    console.log("invalid player")
     Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.nextMove": "It's not your turn."}});
     return;
   };

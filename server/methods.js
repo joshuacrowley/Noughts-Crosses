@@ -5,6 +5,15 @@ Meteor.methods({
   Boxes.update({gameToken: usersGame}, {$set: {boxValue: "empty"}}, {multi:true});
   },
 
+  wrapUpGame : function(nextTurn, currentGame, player){
+  	console.log(nextTurn);
+  	console.log(currentGame._id);
+  	console.log(player);
+
+
+    console.log("Game wrapped");
+  },
+
   tellPlayer: function(otherPlayer){
   	Meteor.users.update({_id: otherPlayer}, {$set: {"profile.nextMove": "It's your turn."}});
   },
