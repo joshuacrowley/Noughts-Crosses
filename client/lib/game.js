@@ -1,10 +1,111 @@
-turnCheck = function (){
+var scoreCount;
+var runCount;
 
+toWin = function (x){
+  if (x >= 2){
+      console.log("won!");
+      Meteor.users.update({_id: Meteor.userId()}, {$set: {"profile.nextMove": "You Won!"}});
+    };
+}
+
+indexTodirection = function (direction){
+
+  switch (direction) {
+    case "north":
+      return 0;
+      break;
+    case "northEast":
+      return 1;
+      break;
+    case "east":
+      return 2;
+      break;
+    case "southEast":
+      return 3;
+      break;
+    case "south":
+      return 4;
+      break;
+    case "southWest":
+      return 5;
+      break;
+    case "west":
+      return 6;
+      break;
+    case "northWest":
+      return 7;
+      break;
+    default:
+      console.log("no match");
+  }
+}
+
+getBox = function (gT,tBI) {
+  return Boxes.findOne({
+    $and : [
+    {"gameToken": gT}, 
+    {"boxOrder" : tBI}
+    ]
+  })
+}
+
+cellCheck = function (theBoxID, gameToken, playersValue, direction){
+
+    scoreCount = 0;
+    runCount = 0;
+
+    //stop the function if it doesn't get a valid input
+    if (theBoxID != 0){
+
+      //get the box using the arguments
+      var boxToCheck = getBox(gameToken,theBoxID);
+
+      //console.log(boxToCheck.boxValue)
+      //console.log(playersValue)
+
+      while (boxToCheck.boxValue == playersValue) {
+      //console.log("foundsomething");
+      scoreCount++;
+      runCount++;
+      var indexToCheck = indexTodirection(direction);    
+      var nextBox = boxToCheck.neighbourCells[indexToCheck]["cellID"]
+      
+      if (nextBox == 0){
+        console.log(scoreCount);
+        //console.log("off the board");
+        return scoreCount;
+      }
+
+      //console.log(nextBox);
+      boxToCheck = getBox(gameToken,nextBox);
+      //console.log(boxToCheck);
+      
+        if (runCount > 10){
+            break;
+          }     
+
+      }        
+      
+      //console.log("streak ended");
+      //console.log(boxToCheck);
+      //console.log(boxToCheck.boxValue);
+      //console.log(boxToCheck.neighbourCells);
+      //console.log(boxToCheck.neighbourCells[0]["direction"]);
+      //console.log(boxToCheck.neighbourCells[0]["cellID"]);
+      
+    return scoreCount;
+
+    } else {
+      console.log("no boxes by 0");
+    };
+
+    console.log("cell check over");
+    console.log(scoreCount);
+    return scoreCount;
 };
 
 checkBoxes = function (boxIDs, gameToken, value){
 
-    var runCount = 0;
     var ToCheck = Boxes.findOne({"_id": boxIDs}).neighbourCells
 
     for (var key in ToCheck) {
@@ -14,52 +115,11 @@ checkBoxes = function (boxIDs, gameToken, value){
       //if a valid cell
       if (neighbours.cellID != 0){
 
-        //find the cell, by game and by the order
-        var cellToCheck = Boxes.findOne({
-          $and : [
-          {"gameToken": gameToken}, 
-          {"boxOrder" : neighbours.cellID}
-          ]
-        })
-
-        //save the direction if we're going to follow it
-        var tangent = neighbours.direction;
-        console.log(tangent);
-
-        //now, while this value is equal to the player
-        while (cellToCheck.boxValue == value){
-
-          toDoubleCheck = cellToCheck.neighbourCells;
-
-          for (var key in toDoubleCheck) {
-
-            var nextCheck = toDoubleCheck[key];
-
-            if (toDoubleCheck.direction == tangent){
-
-            }
-
-          }
-
-          if (runCount > 10){
-            break;
-          } 
-          //up the count
-          runCount++;
-          //get the sibiling value of the tangent
-          console.log(cellToCheck.neighbourCells.tangent);
-          var whileCheck = cellToCheck.neighbourCells.tangent;
-          var whileCheck = this.cellID;
-
-          //update the value of the object
-
+        var testStreak = cellCheck(neighbours.cellID, gameToken, value, neighbours.direction);
+          toWin(testStreak);
         }
 
-      }else{
-
       };
-
-    };
 
       //set Index number
       //set Direction

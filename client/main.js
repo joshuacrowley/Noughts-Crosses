@@ -11,7 +11,7 @@ Template.game.events({
   var usersGame = Meteor.user().profile.currentGame;
   currentGame = Games.findOne({"gameToken": usersGame});
   nextTurn = (Meteor.userId() == currentGame.owner ) ? currentGame.opponent  : currentGame.owner; 
-  var value = (Meteor.userId() == currentGame.owner ) ? "nought" : "cross";
+  value = (Meteor.userId() == currentGame.owner ) ? "nought" : "cross";
   
   
   console.log(nextTurn);
